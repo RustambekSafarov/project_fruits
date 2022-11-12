@@ -11,7 +11,7 @@ def get_cheapest_fruit(data:str)->str:
     e = 0.0
     for i in list_of_fruits:
         p = i[i.index(',')+1:]
-        if e < float(p):
+        if e > float(p):
             e = float(p)
 
     return e
